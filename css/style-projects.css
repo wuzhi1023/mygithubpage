@@ -1,0 +1,48 @@
+* {
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+}
+.orange-bg {
+	background-color: #FF7700;
+	margin: 0 0 0 0;
+}
+body {
+	width: 100%;
+}
+h1 {
+	font-size: 60px;
+	margin-bottom: 10px;
+}
+#filter-menu a {
+	display: inline-block;
+	text-align: center;
+	width: 120px;
+	height: 20px;
+	border: 2px solid white;
+}
+#project-grip {
+	width: 100%;
+	display: block;
+}
+.project {
+	float: left;
+	width: 16.5%;
+	margin: 0 0.2% 0.2% 0;
+	height: 200px;
+	background-color: #d96500;
+}
+.end6 {
+	margin-right: 0;
+}
+#filter-menu {
+	position: absolute;
+	left: 50%;
+	top: 420px;
+}
+#nav-block {
+	position: absolute;
+	left: 7%;
+	bottom: 12%;
+}

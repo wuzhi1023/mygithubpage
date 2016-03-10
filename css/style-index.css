@@ -1,0 +1,87 @@
+* {
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+}
+h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 100;
+}
+a {
+	display: inline-block;
+	text-align: center;
+	width: 120px;
+	height: 20px;
+	border: 2px solid white;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+.orange-bg {
+	background-color: #FF7700;
+	margin: 0 0 0 0;
+}
+.centered {
+	z-index: 100;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    min-height: 50%;
+}
+#pronunciation {
+	position: relative;
+	left: 42%;
+	margin-bottom: 5px;
+	-ms-transform: translateY(-17px);
+    -webkit-transform: translateY(-17px);
+    transform: translateY(-17px);
+}
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-55%);
+	z-index: 100;
+}
+#content-block {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 100;
+}
+#animated-bg {
+	z-index: -100;
+	position: fixed;
+	left: -100px;
+	top: -100px;
+	width: calc(100vw + 200px);
+	height: calc(100vh + 200px);
+	background-color: #FF7700;
+	background-image: url(../image/background-dots.svg);
+	background-size: 100px 100px;
+}
+#intro {
+	width: 90%;
+}
+.button-line {
+	width: 40%;
+}
+.right {
+	float: right;
+}
