@@ -7,6 +7,9 @@ $(function() {
   var intern = $('#intern').offset().top;
   var contact = $('#contact').offset().top;
   var avoidChange = false;
+  $('#page-nav-block').css('left', - $(newSec).offset().left);
+  $('#page-nav-block').css('height', $(newSec).height());
+  toggle();
 
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -14,9 +17,10 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
-        $('html, body').velocity("scroll", {
+        $('html, body').velocity("scroll",{
+          easing: [0.23,0.03,0,1.03],
           offset: target.offset().top,
-          duration: 1000,
+          duration: 750,
           begin: function(elements) {
             toggle();
             avoidChange = true;
@@ -41,9 +45,17 @@ $(function() {
   });
 
   function toggle(){
-    $(curSec).toggleClass("hidden");
-    $(newSec).toggleClass("hidden");
+    $(curSec).velocity({color: '#fcc'}, 200);
+    $(newSec).velocity({color: '#fff'}, 200);
+    moveBar(newSec);
     curSec = newSec;
+  }
+
+  function moveBar(curSec){
+    $curSec = $(curSec);
+    var top = $curSec.position().top;
+    var width = $curSec.offset().left + 1*$curSec.width()+10;
+    $('#page-nav-block').velocity({top: top, width:width}, {duration: 150, queue:false});
   }
 
   $( window ).resize(function() {
@@ -52,5 +64,8 @@ $(function() {
     education = $('#education').offset().top;
     intern = $('#intern').offset().top;
     contact = $('#contact').offset().top;
+    $('#page-nav-block').css('left', - $(newSec).offset().left);
+    $('#page-nav-block').css('height', $(newSec).height());
+    toggle();
   });
 });

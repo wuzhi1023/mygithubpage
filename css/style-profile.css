@@ -12,9 +12,6 @@
 	margin-left: auto;
     margin-right: auto;
 }
-.hidden {
-	display: none;
-}
 #page-nav {
     position: fixed;
     left: 5%;
@@ -41,4 +38,14 @@ nav a:first-of-type {
 	padding-top: 15%;
 	margin-right: 10%;
 	margin-left: auto;
+}
+#page-nav-block {
+	z-index: -100;
+	position: absolute;
+	background-color: #cd4d0c;
+}
+#page-nav > a{
+	color: #fcc;
+	font-size: 2em;
+	text-decoration: none;
 }
