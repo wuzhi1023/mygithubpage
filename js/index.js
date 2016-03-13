@@ -2,6 +2,7 @@ var vx=0;
 var vy=0;
 var target_vx=0;
 var target_vy=0;
+var speed = 0.6;
 
 var $move=null;
 var $document=null;
@@ -13,19 +14,20 @@ function init(){
 	$move = $("#animated-bg");
 	$document=$(document);
 	$document.mousemove(function( event ) {
-		target_vx=(2*event.pageX/$document.width())-1;
-		target_vy=(2*event.pageY/$document.height())-1;
+		target_vx=-((2*event.pageX/window.innerWidth)-1)*speed;
+		target_vy=-((2*event.pageY/window.innerHeight)-1)*speed;
 	})
+	$("a").mouseover
 	oriLeft=$move.position().left;
 	oriTop=$move.position().top;
 	animate();
 }
 
 function animate() {
-	if(vx<target_vx) vx+=0.01;
-	if(vx>target_vx) vx-=0.01;
-	if(vy<target_vy) vy+=0.01;
-	if(vy>target_vy) vy-=0.01;
+	if(vx<target_vx) vx+=0.01*speed;
+	if(vx>target_vx) vx-=0.01*speed;
+	if(vy<target_vy) vy+=0.01*speed;
+	if(vy>target_vy) vy-=0.01*speed;
 
 	var newLeft=$move.position().left+10*vx;
 	var newTop=$move.position().top+10*vy;
