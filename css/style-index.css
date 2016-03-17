@@ -31,6 +31,14 @@ a {
 	width: 120px;
 	height: 40px;
 	border: 2px solid white;
+	-webkit-transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s;
+}
+a:hover {
+	background-color: #FFF;
+	color: #F70;
+	-webkit-transition: background-color 0.15s, color 0.15s;
+    transition: background-color 0.15s, color 0.15s;
 }
 body {
 	width: 100vw;
@@ -39,7 +47,7 @@ body {
 	overflow: hidden;
 }
 .orange-bg {
-	background-color: #FF7700;
+	background-color: #F70;
 	margin: 0 0 0 0;
 }
 .centered {
@@ -75,7 +83,7 @@ body {
 	top: -100px;
 	width: calc(100vw + 200px);
 	height: calc(100vh + 200px);
-	background-color: #FF7700;
+	background-color: #F70;
 	background-image: url(../image/background-dots.svg);
 	background-size: 100px 100px;
 }
