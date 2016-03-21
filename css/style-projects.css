@@ -46,3 +46,10 @@ h1 {
 	left: 7%;
 	bottom: 12%;
 }
+#transition-block {
+	background-color: #FEDDBF;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 100vh;
+}
