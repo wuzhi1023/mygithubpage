@@ -27,11 +27,36 @@ h1 {
 	display: block;
 }
 .project {
+	position: relative;
 	float: left;
 	width: 16.5%;
 	margin: 0 0.2% 0.2% 0;
-	height: 200px;
+	cursor: pointer;
+}
+.hover-block {
+	position: absolute;
+	left: 0;
 	background-color: #d96500;
+	opacity:.3;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+}
+.hover-block:hover {
+	position: absolute;
+	left: 0;
+	background-color: #d96500;
+	opacity:.6;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 0.15s;
+    transition: opacity 0.15s;
+}
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .end6 {
 	margin-right: 0;
@@ -47,7 +72,7 @@ h1 {
 	bottom: 12%;
 }
 #transition-block {
-	background-color: #FEDDBF;
+	background-color: #622e00;
 	position: fixed;
 	width: 100vw;
 	height: 100vh;

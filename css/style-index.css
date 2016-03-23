@@ -1,35 +1,23 @@
 * {
 	color: white;
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'Comfortaa', cursive;
 	font-weight: 400;
-}
-h1 {
-	font-family: 'Kaushan Script', cursive;
-	font-size: 70px;
-	margin-top: 0;
-	margin-bottom: 0;
-	text-align: center;
-}
-h2 {
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 0;
 }
 p {
 	margin-top: 0;
 	margin-bottom: 0;
-	font-weight: 100;
 }
 /* buttons */
 a {
 	text-decoration: none;
 	overflow: hidden;
-	margin-top: 20px;
+	margin-top: 10px;
+	padding-top: 5px;
 	display: inline-block;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.4em;
 	width: 120px;
-	height: 40px;
+	height: 35px;
 	border: 2px solid white;
 	-webkit-transition: background-color 0.2s, color 0.2s;
     transition: background-color 0.2s, color 0.2s;
@@ -56,25 +44,44 @@ body {
 	margin-left: auto;
     margin-right: auto;
 }
-#pronunciation {
-	position: relative;
-	left: 42%;
-	margin-bottom: 5px;
-	-ms-transform: translateY(-17px);
-    -webkit-transform: translateY(-17px);
-    transform: translateY(-17px);
-}
 .vertical-center {
 	position: relative;
 	top: 50%;
 	transform: translateY(-55%);
 	z-index: 100;
 }
-#content-block {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 100;
+#center-canvas {
+	border-color: #FFF;
+	border-width: 4px;
+	border-style: solid;
+	min-height: 430px;
+    width: 80%;
+}
+#center-canvas > p {
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 1.2em;
+}
+p#hello {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 4em;
+	margin-top: 150px;
+}
+span#zhihao {
+	font-family: 'Fredericka the Great', cursive;
+	font-size: 70px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: center;
+	display: inline;
+}
+#pronunciation {
+	position: relative;
+	left: 180px;
+	margin-bottom: 5px;
+	-ms-transform: translateY(-17px);
+    -webkit-transform: translateY(-17px);
+    transform: translateY(-17px);
 }
 #animated-bg {
 	z-index: -100;
@@ -87,19 +94,9 @@ body {
 	background-image: url(../image/background-dots.svg);
 	background-size: 100px 100px;
 }
-#intro {
-	width: 90%;
-}
-#center-canvas {
-	border-color: #FFF;
-	border-width: 4px;
-	border-style: solid;
-	min-height: 60%;
-    width: 80%;
-}
-.button-line {
-	width: 50%;
-}
-.right {
-	float: right;
+#button-line {
+	position: absolute;
+	width: 120px;
+	right: 40px;
+	top: 20px;
 }
