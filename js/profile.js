@@ -17,7 +17,6 @@ $(function() {
   var topOffset = 0;
   var avoidChange = false;
   $('#page-nav-block').css('left', - initNavLeft - 200);
-  $('#page-nav-block').css('height', $(newSec).height()+6);
   var aboutMeSVG = new Vivus('about-me-svg', {
     type: 'delayed',
     duration: 240,

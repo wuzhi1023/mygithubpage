@@ -87,13 +87,14 @@ li {
 	font-size: 0.7em;
 }
 #page-nav-block {
+	height: 42px;
 	z-index: -100;
 	position: absolute;
 	background-color: #cd4d0c;
 }
 #page-nav > a{
 	color: #fcc;
-	font-size: 2em;
+	font-size: 30px;
 	text-decoration: none;
 }
 #float-obj {
