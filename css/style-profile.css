@@ -4,9 +4,13 @@
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-weight: 400;
 }
+body {
+	background-image: url('../image/texture.png');
+	background-color: #F70;
+	margin: 0 0 0 0;
+}
 .orange-bg {
 	background-image: url('../image/texture.png');
-	background-attachment: fixed;
 	background-color: #F70;
 	margin: 0 0 0 0;
 }
