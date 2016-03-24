@@ -7,12 +7,14 @@
 	<rect fill="#6FBEC5" width="1251" height="580.5"/>
 </g>
 <g id="Layer_1">
-	<polygon opacity="0.1" fill="#32353B" points="1288.1,580.5 824,581.3 613.3,305 960.2,146.5 	"/>
+	
+		<rect x="679.3" y="81.6" transform="matrix(0.878 0.4786 -0.4786 0.878 208.8091 -351.3592)" opacity="0.25" fill="#42464F" width="228.9" height="304.8"/>
 	
 		<rect x="672.3" y="73.1" transform="matrix(0.878 0.4786 -0.4786 0.878 203.9132 -349.039)" fill="#FFFFFF" width="228.9" height="304.8"/>
 	
 		<rect x="696.4" y="90.8" transform="matrix(0.878 0.4786 -0.4786 0.878 195.7866 -356.3305)" fill="#42464F" width="201.2" height="230.3"/>
-	<polygon opacity="0.1" fill="#32353B" points="1251,580.5 774.1,580.2 586.9,332.9 883.7,93.2 	"/>
+	
+		<rect x="625.9" y="66.1" transform="matrix(0.9693 0.2458 -0.2458 0.9693 76.4539 -175.3059)" opacity="0.25" fill="#42464F" width="228.9" height="304.8"/>
 	
 		<rect x="620.8" y="60.4" transform="matrix(0.9693 0.2458 -0.2458 0.9693 74.8891 -174.2372)" fill="#FFFFFF" width="228.9" height="304.8"/>
 	

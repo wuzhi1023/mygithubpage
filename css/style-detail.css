@@ -49,7 +49,6 @@ body {
 }
 #navbar a:hover {
 	color: #663000;
-	font-weight: 600;
 	-webkit-transition: color 0.15s;
     transition: color 0.15s;
 }
