@@ -1,6 +1,7 @@
 $(function() {
     var height = $('.hover-block').first().width();
     $('.hover-block').css('height', height);
+    $('.project').css('height', height);
     $('.project').click(function() {
         href = $(this).attr("goto");
         console.log(href);
@@ -14,5 +15,6 @@ $(function() {
     $( window ).resize(function() {
         var height = $('.hover-block').first().width();
         $('.hover-block').css('height', height);
+        $('.project').css('height', height);
     });
 });

@@ -100,8 +100,8 @@ $(function() {
     // $obj.css('left', initLeft + leftOffset);
   }
   function toggle(){
-    $(curSec).velocity({color: '#fcc'}, 200);
-    $(newSec).velocity({color: '#fff'}, 200);
+    $(curSec).velocity({opacity: 0.65}, 200);
+    $(newSec).velocity({opacity: 1}, 200);
     changeSVG(newSec, curSec);
     moveBar(newSec);
     curSec = newSec;
@@ -173,8 +173,6 @@ $(function() {
     education = $('#education').offset().top;
     intern = $('#intern').offset().top;
     contact = $('#contact').offset().top;
-    $('#page-nav-block').css('left', - $(newSec).offset().left);
-    $('#page-nav-block').css('height', $(newSec).height());
     toggle();
   });
   if(navigator.userAgent.match(/Trident\/7\./)) { // if IE

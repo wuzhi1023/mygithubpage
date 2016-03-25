@@ -10,6 +10,8 @@
 }
 body {
 	width: 100%;
+	background-image: url('../image/texture.png');
+	background-color: #F70;
 }
 h1 {
 	font-size: 60px;
@@ -22,15 +24,29 @@ h1 {
 	height: 20px;
 	border: 2px solid white;
 }
-#project-grip {
-	width: 100%;
+#navbar a {
+	font-size: 20px;
+	margin-right: 20px;
+	-webkit-transition: color 0.15s;
+    transition: color 0.15s;
+}
+#navbar a:hover {
+	color: #663000;
+	-webkit-transition: color 0.15s;
+    transition: color 0.15s;
+}
+#project-grid {
+	position: fixed;
+	top: 38px;
+	right: 45px;
+	width: 68%;
 	display: block;
 }
 .project {
 	position: relative;
 	float: left;
-	width: 16.5%;
-	margin: 0 0.2% 0.2% 0;
+	width: 33.3%;
+	margin: 0 0 0 0;
 	cursor: pointer;
 }
 .hover-block {
@@ -55,7 +71,9 @@ h1 {
 }
 .project-name {
 	position: absolute;
-	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
 	font-size: 1.4em;
 	text-align: center;
 }

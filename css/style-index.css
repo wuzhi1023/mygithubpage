@@ -51,6 +51,8 @@ body {
 	z-index: 100;
 }
 #center-canvas {
+	background-image: url('../image/texture.png');
+	background-color: #F70;
 	border-color: #FFF;
 	border-width: 4px;
 	border-style: solid;
