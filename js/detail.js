@@ -1,6 +1,5 @@
 $(function() {
 	window.scrollTo(0,0);
-	$('.set-1').load(set3Resize);
 	
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
@@ -33,16 +32,7 @@ $(function() {
         	complete: function(){window.location=href;}});
     });
 
-	$(window).resize(set3Resize);
-	function set3Resize(){
-		console.log('here');
-		$('.image-set').each(function() {
-			if ($(this).height() != $(this).children(":first").height()*2)
-				$(this).height($(this).children(":first").height()*2);
-		});
-	}
 	$(window).scroll(function() {
-		// set3Resize();
 		var scrollTop = $(window).scrollTop();
 		$('#hero-image').css('top', -scrollTop/3);
 		if (scrollTop>fixnavPos && fixnav==false){
