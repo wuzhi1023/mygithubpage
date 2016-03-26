@@ -1,10 +1,28 @@
 $(function() {
+	var fixnavPos = $('#hero-block').height() - 60;
+	var fixnav = false;
+	if ($(window).scrollTop()>fixnavPos) {
+		fixnav = true;
+		$('#fix-navbar').velocity({opacity: 0.9}, 100);
+	}
 	$('#hero-image').css('top',1000);
 	$('#hero-block').velocity({top: 0}, 600);
 	$('#content-block').velocity({top: 400}, {easing: 'easeOut', duration: 600,delay:100});
 	$('#hero-image').velocity({top: 0, opacity: 1}, {duration: 1000,delay:200, easing: [.3,1.03,.74,1.13],complete: function(){$('#hero-image').css('position','fixed');$('body').css('background-color','#F70');}});
 	$('#shadow').velocity({top: 0}, {duration: 600, delay:200});
 
+
+	$(window).scroll(function() {
+		var scrollTop = $(window).scrollTop();
+		$('#hero-image').css('top', -scrollTop/3);
+		if (scrollTop>fixnavPos && fixnav==false){
+			fixnav = true;
+			$('#fix-navbar').velocity({opacity: 0.9}, 100);
+		} else if (scrollTop<=fixnavPos && fixnav==true){
+			fixnav = false;
+			$('#fix-navbar').velocity({opacity: 0}, 100);
+		}
+	});
 	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
 	$('body').on("mousewheel", function () {
 		// remove default behavior
@@ -16,4 +34,5 @@ $(function() {
 		window.scrollTo(0, currentScrollPosition - wheelDelta);
 		});
 	}
+
 });

@@ -4,9 +4,9 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1500 1500" enable-background="new 0 0 1500 1500" xml:space="preserve">
 <rect y="-9.1" fill="#BDC3C7" stroke="#000000" stroke-miterlimit="10" width="1500" height="1509.1"/>
-<rect x="162.2" y="607.6" fill="#FFFFFF" width="1175.5" height="696.7"/>
-<path fill="#D13137" d="M202,646v620h387.8l247.1-620H202z M557,1110L406.2,954H401l0,156h-35l0.2-307.5l34.8-0.1V932h5l143.8-129.5
-	l47.8,0.1L442.7,941.9L606.2,1110H557z"/>
-<path fill="#D13137" d="M875.9,646l-247.1,620H1298V646H875.9z M1133.7,1111H1099l0-139H922l-0.2,137.7l-34.8,0.2V804h35l-0.6,135.6
-	L1098,939V804h36L1133.7,1111z"/>
+<rect x="162.2" y="507.6" fill="#FFFFFF" width="1175.5" height="696.7"/>
+<path fill="#D13137" d="M202,546v620h387.8l247.1-620H202z M557,1010L406.2,854H401l0,156h-35l0.2-307.5l34.8-0.1V832h5l143.8-129.5
+	l47.8,0.1L442.7,841.9L606.2,1010H557z"/>
+<path fill="#D13137" d="M875.9,546l-247.1,620H1298V546H875.9z M1133.7,1011H1099l0-139H922l-0.2,137.7l-34.8,0.2V704h35l-0.6,135.6
+	L1098,839V704h36L1133.7,1011z"/>
 </svg>
