@@ -227,3 +227,11 @@ img.first {
 a.right {
 	right: 10%;
 }
+#transition-block {
+	background-color: #622e00;
+	position: fixed;
+	z-index: 300;
+	width: 100vw;
+	height: 100vh;
+	top: 100vh;
+}

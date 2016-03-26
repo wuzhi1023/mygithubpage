@@ -11,6 +11,16 @@ $(function() {
 	$('#hero-image').velocity({top: 0, opacity: 1}, {duration: 1000,delay:200, easing: [.3,1.03,.74,1.13],complete: function(){$('#hero-image').css('position','fixed');$('body').css('background-color','#F70');}});
 	$('#shadow').velocity({top: 0}, {duration: 600, delay:200});
 
+	$('#button-bar a').click(function(event) {
+		event.preventDefault();
+        href = $(this).attr("href");
+        console.log(href);
+        $('#transition-block').velocity({top:0},{
+        	queue: false,
+        	duration: 400,
+        	easing: 'ease-in',
+        	complete: function(){window.location=href;}});
+    });
 
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
