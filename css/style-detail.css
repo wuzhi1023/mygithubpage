@@ -44,9 +44,8 @@ li {
 	font-weight: 400;
 	font-size: 2em;
 	position: absolute;
-	width: calc(100% - 340px);
-	padding-right: 170px;
-	padding-left: 170px;
+	width: calc(100% - 430px);
+	padding-left: 215px;
 	padding-top: 20px;
 	color: #663000;
 	text-align: center;
