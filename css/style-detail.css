@@ -44,8 +44,9 @@ li {
 	font-weight: 400;
 	font-size: 2em;
 	position: absolute;
-	width: 200px;
-	left: calc(50% - 100px);
+	width: calc(100% - 340px);
+	padding-right: 170px;
+	padding-left: 170px;
 	padding-top: 20px;
 	color: #663000;
 	text-align: center;
@@ -171,6 +172,38 @@ img.first {
 	margin-top: 60px;
 	width: 60%;
 	margin-left: 20%;
+}
+.image-set {
+	position: relative;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.image-set img {
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+}
+.set-1{
+	width: 45%;
+}
+.set-2{
+	position: absolute;
+	width: 45%;
+	left: 27.5%;
+	top: 0;
+	-ms-transform: translate(0,50%);
+    -webkit-transform: translate(0,50%));
+    transform: translate(0,50%);
+}
+.set-3{
+	position: absolute;
+	width: 45%;
+	left: 55%;
+	top: 0;
+	-ms-transform: translate(0,100%);
+    -webkit-transform: translate(0,100%));
+    transform: translate(0,100%);
 }
 .text-left {
 	font-family: 'Comfortaa', cursive;

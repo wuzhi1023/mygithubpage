@@ -1,4 +1,5 @@
 $(function() {
+	set3Resize();
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
 	if ($(window).scrollTop()>fixnavPos) {
@@ -22,6 +23,12 @@ $(function() {
         	complete: function(){window.location=href;}});
     });
 
+	$(window).resize(set3Resize);
+	function set3Resize(){
+		$('.image-set').each(function() {
+			$(this).height($(this).children(":first").height()*2);
+		});
+	}
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		$('#hero-image').css('top', -scrollTop/3);
