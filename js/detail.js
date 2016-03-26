@@ -29,7 +29,7 @@ $(function() {
         	queue: false,
         	duration: 400,
         	easing: 'ease-in',
-        	complete: function(){window.location=href;}});
+        	complete: function(){window.scrollTo(0,0);window.location=href;}});
     });
 
 	$(window).resize(set3Resize);
