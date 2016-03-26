@@ -1,5 +1,5 @@
 $(function() {
-	scrollTo(0,0);
+	window.scrollTo(0,0);
 	set3Resize();
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
@@ -62,9 +62,6 @@ $(function() {
 		var currentScrollPosition = window.pageYOffset;
 		window.scrollTo(0, currentScrollPosition - wheelDelta);
 		});
-	}
-	window.onbeforeunload = function(){
-		window.scrollTo(0,0);
 	}
 
 });
