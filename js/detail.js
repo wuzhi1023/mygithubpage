@@ -5,7 +5,7 @@ $(function() {
 	var fixnav = false;
 	if ($(window).scrollTop()>fixnavPos) {
 		fixnav = true;
-		$('#fix-navbar').velocity({opacity: 0.9}, 300);
+		$('#fix-navbar').velocity({opacity: 0.9}, 100);
 	}
 	if ($(window).scrollTop() == 0){
 		$('#hero-image').css('top',1000);
@@ -44,10 +44,10 @@ $(function() {
 		$('#hero-image').css('top', -scrollTop/3);
 		if (scrollTop>fixnavPos && fixnav==false){
 			fixnav = true;
-			$('#fix-navbar').velocity({opacity: 0.9}, 300);
+			$('#fix-navbar').velocity({opacity: 0.9}, 100);
 		} else if (scrollTop<=fixnavPos && fixnav==true){
 			fixnav = false;
-			$('#fix-navbar').velocity({opacity: 0}, 300);
+			$('#fix-navbar').velocity({opacity: 0}, 100);
 		}
 	});
 	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
