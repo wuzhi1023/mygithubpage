@@ -1,4 +1,5 @@
 $(function() {
+	scrollTo(0,0);
 	set3Resize();
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
@@ -6,11 +7,19 @@ $(function() {
 		fixnav = true;
 		$('#fix-navbar').velocity({opacity: 0.9}, 300);
 	}
-	$('#hero-image').css('top',1000);
-	$('#hero-block').velocity({top: 0}, 600);
-	$('#content-block').velocity({top: 400}, {easing: 'easeOut', duration: 600,delay:100});
-	$('#hero-image').velocity({top: 0, opacity: 1}, {duration: 1000,delay:200, easing: [.3,1.03,.74,1.13],complete: function(){$('#hero-image').css('position','fixed');$('body').css('background-color','#F70');}});
-	$('#shadow').velocity({top: 0}, {duration: 600, delay:200});
+	if ($(window).scrollTop() == 0){
+		$('#hero-image').css('top',1000);
+		$('#hero-block').velocity({top: 0}, 600);
+		$('#content-block').velocity({top: 400}, {easing: 'easeOut', duration: 600,delay:100});
+		$('#hero-image').velocity({top: 0, opacity: 1}, {duration: 1000,delay:200, easing: [.3,1.03,.74,1.13],complete: function(){$('#hero-image').css('position','fixed');$('body').css('background-color','#F70');}});
+		$('#shadow').velocity({top: 0}, {duration: 600, delay:200});
+	} else {
+		$('#hero-image').css('top',1000);
+		$('#hero-block').css('top',0);
+		$('#content-block').velocity({top: 400}, {easing: 'easeOut', duration: 600,delay:100});
+		$('#hero-image').velocity({top: 0, opacity: 1}, {duration: 1000,delay:200, easing: [.3,1.03,.74,1.13],complete: function(){$('#hero-image').css('position','fixed');$('body').css('background-color','#F70');}});
+		$('#shadow').velocity({top: 0}, {duration: 600, delay:200});
+	}
 
 	$('#button-bar a').click(function(event) {
 		event.preventDefault();
@@ -25,6 +34,7 @@ $(function() {
 
 	$(window).resize(set3Resize);
 	function set3Resize(){
+		console.log('here');
 		$('.image-set').each(function() {
 			$(this).height($(this).children(":first").height()*2);
 		});
