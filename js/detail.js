@@ -36,10 +36,12 @@ $(function() {
 	function set3Resize(){
 		console.log('here');
 		$('.image-set').each(function() {
-			$(this).height($(this).children(":first").height()*2);
+			if ($(this).height() != $(this).children(":first").height()*2)
+				$(this).height($(this).children(":first").height()*2);
 		});
 	}
 	$(window).scroll(function() {
+		set3Resize();
 		var scrollTop = $(window).scrollTop();
 		$('#hero-image').css('top', -scrollTop/3);
 		if (scrollTop>fixnavPos && fixnav==false){
