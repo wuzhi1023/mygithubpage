@@ -1,6 +1,7 @@
 $(function() {
 	window.scrollTo(0,0);
-	set3Resize();
+	$('.set-1').load(set3Resize);
+	
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
 	if ($(window).scrollTop()>fixnavPos) {
@@ -29,7 +30,7 @@ $(function() {
         	queue: false,
         	duration: 400,
         	easing: 'ease-in',
-        	complete: function(){window.scrollTo(0,0);window.location=href;}});
+        	complete: function(){window.location=href;}});
     });
 
 	$(window).resize(set3Resize);
@@ -41,7 +42,7 @@ $(function() {
 		});
 	}
 	$(window).scroll(function() {
-		set3Resize();
+		// set3Resize();
 		var scrollTop = $(window).scrollTop();
 		$('#hero-image').css('top', -scrollTop/3);
 		if (scrollTop>fixnavPos && fixnav==false){
@@ -63,5 +64,4 @@ $(function() {
 		window.scrollTo(0, currentScrollPosition - wheelDelta);
 		});
 	}
-
 });
