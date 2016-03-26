@@ -63,5 +63,8 @@ $(function() {
 		window.scrollTo(0, currentScrollPosition - wheelDelta);
 		});
 	}
+	window.onbeforeunload = function(){
+		window.scrollTo(0,0);
+	}
 
 });
