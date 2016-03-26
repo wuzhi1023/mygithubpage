@@ -234,9 +234,11 @@ img.first {
 	position: absolute;
 	font-size: 2em;
 	color: #994800;
+	text-align: right;
 }
-a.right {
+#button-bar a.right {
 	right: 10%;
+	text-align: left;
 }
 #transition-block {
 	background-color: #622e00;
