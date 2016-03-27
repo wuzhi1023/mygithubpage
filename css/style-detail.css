@@ -32,7 +32,7 @@ li {
 	opacity: 0;
 	z-index: 100;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 90px;
 	font-size: 1.2em;
 	background-color: #e6e6e6;
@@ -75,13 +75,13 @@ li {
 	position: absolute;
 	top: 100vh;
 	z-index: 0;
-	width: 100%;
+	width: 100vw;
 	height: 400px;
 }
 #navbar {
 	z-index: 100;
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 60px;
 	font-size: 1.2em;
 }
@@ -109,11 +109,11 @@ li {
 	position: absolute;
 	top: 100vh;
 	z-index: -100;
-	width: 100%;
+	width: 100vw;
 }
 #shadow {
 	position: absolute;
-	width: 100%;
+	width: 100vw;
 	height: 100%;
 	left: 0;
 	top: 100%;
@@ -256,7 +256,7 @@ img.first {
 	position: fixed;
 	z-index: 300;
 	width: 100vw;
-	height: 100vh;
+	height: 0;
 	top: 100vh;
 }
 .top-align {

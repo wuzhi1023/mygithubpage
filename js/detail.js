@@ -18,6 +18,7 @@ $(function() {
 		event.preventDefault();
         href = $(this).attr("href");
         console.log(href);
+        $('#transition-block').height($(window).height()*2);
         $('#transition-block').velocity({top:0},{
         	queue: false,
         	duration: 400,
