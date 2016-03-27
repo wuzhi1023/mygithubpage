@@ -14,7 +14,7 @@ body {
 }
 li {
 	padding-top: 12px;
-	font-size: 1.2em;
+	font-size: inherit;
 	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
 	color: #353230;
@@ -168,6 +168,7 @@ li {
 	margin-right: auto;
 }
 .image-3 {
+	vertical-align: middle;
 	display: inline-block;
 	margin-top: 30px;
 	width: 26%;
@@ -191,6 +192,7 @@ img.first {
 .text-left {
 	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
+	font-size: 1.2em;
 	color: #353230;
 	margin-top: 60px;
 	display: inline-block;
@@ -202,6 +204,7 @@ img.first {
 .text-right {
 	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
+	font-size: 1.2em;
 	color: #353230;
 	margin-top: 60px;
 	display: inline-block;
