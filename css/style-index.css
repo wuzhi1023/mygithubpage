@@ -177,7 +177,7 @@ span#zhihao {
 }
 @media screen and (max-width: 585px) {
 	#center-canvas > p {
-		margin-top: 50px;
+		margin-top: 30px;
 		float: left;
 		display: block;
 	}
@@ -196,6 +196,6 @@ span#zhihao {
 		padding-top: 50px;
 	}
 	a {
-		margin-top: 60px;
+		margin-top: 40px;
 	}
 }

@@ -104,3 +104,41 @@ img {
 	height: 100vh;
 	top: 100vh;
 }
+
+
+@media screen and (max-width: 1024px) {
+	.project-name {
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 760px) {
+	.project-name {
+		font-size: 1em;
+	}
+	#nav-block {
+		position: relative;
+		left: 50px;
+		bottom: 0;
+	}
+	#project-grid {
+		margin-top: 30px;
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+	}
+	.project {
+		width: 33.3%;
+	}
+}
+@media screen and (max-width: 760px) {
+	#transition-block {
+		display: none;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	.project {
+		width: 50%;
+	}
+}
