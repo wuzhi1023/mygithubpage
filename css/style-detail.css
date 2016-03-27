@@ -151,6 +151,14 @@ li {
 	display: inline-block;
 	width: 36%;
 }
+.image-full {
+	position: relative;
+	display: block;
+	margin-top: 50px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
 .image-small {
 	position: relative;
 	display: block;
