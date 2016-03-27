@@ -47,6 +47,8 @@ body {
 .vertical-center {
 	position: relative;
 	top: 50%;
+	-ms-transform: translateY(-55%);
+	-webkit-transform: translateY(-55%);
 	transform: translateY(-55%);
 	z-index: 100;
 }
@@ -101,4 +103,91 @@ span#zhihao {
 	width: 120px;
 	right: 40px;
 	top: 20px;
+}
+@media screen and (max-width: 860px) {
+	#animated-bg {
+		display: none;
+	}
+	#center-canvas {
+		position: absolute;
+		top: 0;
+		background-image: url('../image/texture.png');
+		background-color: #F70;
+		border-width: 0;
+		height: 100%;
+	    width: 100%;
+	    -ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+@media screen and (max-width: 634px) {
+	#animated-bg {
+		display: none;
+	}
+	#center-canvas {
+		padding-top: 100px;
+		position: relative;
+		top: 0;
+		border-width: 0;
+		height: 100%;
+	    width: 100%;
+	    -ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	#center-canvas > p {
+		float: right;
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 20px;
+		font-size: 1em;
+	}
+	p#hello {
+		font-size: 3em;
+		margin-top: 50px;
+	}
+	span#zhihao {
+		font-size: 3em;
+	}
+	#pronunciation {
+		position: relative;
+		top: 50px;
+		left: 300px;
+		margin-bottom: 15px;
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	#button-line {
+		position: relative;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		right: 0;
+		top: 0;
+	}
+	a {
+		margin-top: 120px;
+		float: left;
+	}
+	a.right {
+		float: right;
+	}
+}
+@media screen and (max-width: 585px) {
+	#center-canvas > p {
+		margin-top: 50px;
+		float: left;
+		display: block;
+	}
+	p#pronunciation {
+		display: none;
+	}
+	p#hello {
+		font-size: 2em;
+	}
+	span#zhihao {
+		font-size: 2em;
+	}
 }
