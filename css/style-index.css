@@ -191,3 +191,8 @@ span#zhihao {
 		font-size: 2em;
 	}
 }
+@media screen and (max-width: 485px) {
+	#center-canvas {
+		padding-top: 70px;
+	}
+}
