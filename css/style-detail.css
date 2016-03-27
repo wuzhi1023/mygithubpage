@@ -139,7 +139,7 @@ li {
 	width: 100%;
 }
 .image-left {
-	vertical-align: top;
+	vertical-align: middle;
 	margin-top: 60px;
 	display: inline-block;
 	width: 36%;
@@ -255,4 +255,7 @@ img.first {
 	width: 100vw;
 	height: 100vh;
 	top: 100vh;
+}
+.top-align {
+	vertical-align: top;
 }

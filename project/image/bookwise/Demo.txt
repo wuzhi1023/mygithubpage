@@ -1,0 +1,24 @@
+In this demo: Create a new user, post a book to sell, and reserve books to buy.
+1. Create a new user:
+Name, username, email and password.
+You must use a colorado.edu email to sign up, this ensures that all users are from CU.
+
+2. Log in as the user we just created.
+
+3. In the main page, you can search for books to buy, you see all your reservations which we dont have any right now, and you can post a book to sell.
+
+4. Lets post a book.
+Type in the name of the book, author, price, contact information and a short description of the book.
+
+5. Now we go and search all books related to object.
+we can find the book we just posted in the list, click on it will bring us to the post detail page.
+
+6. Now lets click on another book, it says we can reserve the book right now, so lets reserve it. Now the book is reserved for us, we can see the contact informations of the seller.
+
+7. Go back to the main page, and the book we just reserved is listed there.
+
+(8. )Now lets go ahead and reserve another book. 
+
+(9. )Go back to profile page. Each user can reserve up to 2 books at the same time.
+
+Finally we can log out and go back to the landing page.
