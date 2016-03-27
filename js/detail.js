@@ -1,10 +1,12 @@
 $(function() {
 	window.scrollTo(0,0);
-	$('#hero-block').height($('#hero-block').width()*0.4);
+	$('#hero-block').height($('#hero-block').width()*0.35);
 	var fixnavPos = $('#hero-block').height() - 60;
 	var fixnav = false;
-	if ($(window).scrollTop()>fixnavPos) {
+	$('#fix-navbar').css('display','none');
+	if ($(window).scrollTop()>fixnavPos && window.innerWidth>490) {
 		fixnav = true;
+		$('#fix-navbar').css('display','block');
 		$('#fix-navbar').velocity({opacity: 0.9}, 300);
 	}
 
@@ -29,17 +31,21 @@ $(function() {
 	$(window).scroll(function() {
 		var scrollTop = $(window).scrollTop();
 		$('#hero-image').css('top', scrollTop/3);
-		if (scrollTop>fixnavPos && fixnav==false){
-			fixnav = true;
-			$('#fix-navbar').velocity({opacity: 0.9}, 300);
-		} else if (scrollTop<=fixnavPos && fixnav==true){
-			fixnav = false;
-			$('#fix-navbar').velocity({opacity: 0}, 300);
+		if (window.innerWidth>490){
+			if (scrollTop>fixnavPos && fixnav==false){
+				fixnav = true;
+				$('#fix-navbar').css('display','block');
+				$('#fix-navbar').velocity({opacity: 0.9}, 300);
+			} else if (scrollTop<=fixnavPos && fixnav==true){
+				fixnav = false;
+				$('#fix-navbar').velocity({opacity: 0}, {duration: 300, complete: function (){$('#fix-navbar').css('display','none');}});
+			}
 		}
+		
 	});
 
 	$(window).resize(function() {
-		$('#hero-block').height($('#hero-block').width()*0.4);
+		$('#hero-block').height($('#hero-block').width()*0.35);
 		$('#content-block').css({top: $('#hero-block').height()});
 	});
 	if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
