@@ -11,6 +11,7 @@
 }
 body {
 	background-color: #622e00;
+	overflow-x: hidden;
 }
 li {
 	padding-top: 12px;
@@ -329,6 +330,14 @@ img.first {
 	.text-full {
 		font-size: 1.2em;
 	}
+	.image-small {
+		position: relative;
+		display: block;
+		margin-top: 30px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 }
 @media screen and (min-width: 491px) and (max-width: 685px) {
@@ -374,6 +383,14 @@ img.first {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.image-small {
+		position: relative;
+		display: block;
+		margin-top: 30px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 @media screen and (max-width: 490px) {
 	#fix-navbar {
@@ -397,7 +414,7 @@ img.first {
 		font-size: 1em;
 	}
 
-	.image-left, .image-right, .image-full, .image-big, .image-set {
+	.image-left, .image-right, .image-full, .image-big, .image-set, .image-small {
 		position: relative;
 		display: block;
 		margin-top: 30px;
@@ -425,8 +442,6 @@ img.first {
 	.no-gap {
 		margin-top: 0px;
 	}
-}
-@media screen and (max-width: 490px) {
 	#title {
 		font-size: 1em;
 	}

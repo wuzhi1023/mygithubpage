@@ -1,0 +1,29 @@
+					3840	1920	800		490
+.image-left 	36	1382	691		392
+.image-right 	36	1382	691		392
+.image-full 	50	1920	960		400
+.image-small 	25	960		480		392
+.image-3 		26	998		499		208		128
+.image-big 		60	2304	1152	480
+.image-set 		75	2880	1440	600
+@media screen and (max-width: 490px) {
+	.image-left, .image-right, .image-full, .image-big, .image-set {
+		80 392
+	}
+}
+
+
+image-3: 
+<img class='image-3' src="image/bookwise/2-499w.png" 
+	srcset="image/bookwise/2-128w.png 128w, image/bookwise/2-208w.png 208w, image/bookwise/2-499w.png 499w, image/bookwise/2-998w.png 998w" 
+	sizes="26vw">
+
+image-left, image-right:
+<img class='image-left' src="image/bookwise/views-691w.png" 
+	srcset="image/bookwise/views-1382w.png 1382w, image/bookwise/views-691w.png 691w, image/bookwise/views-392w.png 392w" 
+	sizes="(max-width: 490px) 80vw, 36vw">
+
+image-3: 
+<img class='image-small' src="image/chill/prototype-framed-480w.png" 
+	srcset="image/chill/prototype-framed-960w.png 960w, image/chill/prototype-framed-480w.png 480w, image/chill/prototype-framed-392w.png 392w" 
+	sizes="(max-width: 490px) 80vw,(max-width: 810px) 50vw, 25vw">
