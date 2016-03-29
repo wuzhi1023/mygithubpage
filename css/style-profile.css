@@ -181,6 +181,7 @@ svg {
 	h3 {
 		font-size: 1.8em;
 		margin-left: 10%;
+		margin-top: 90px;
 		margin-bottom: 0;
 	}
 	#page-nav{
@@ -197,7 +198,7 @@ svg {
 		font-size: 0.8em;
 	}
 	.small {
-		font-size: 0.7em;
+		font-size: 0.8em;
 	}
 	.content-text {
 		position: relative;
@@ -210,5 +211,16 @@ svg {
 	}
 	.content-title {
 		display: block;
+	}
+}
+@media screen and (max-width: 400px) {
+	p {
+		font-size: 0.8em;
+	}
+	li {
+		font-size: 0.7em;
+	}
+	.small {
+		font-size: 0.7em;
 	}
 }

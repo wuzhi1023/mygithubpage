@@ -23,7 +23,17 @@ image-left, image-right:
 	srcset="image/bookwise/views-1382w.png 1382w, image/bookwise/views-691w.png 691w, image/bookwise/views-392w.png 392w" 
 	sizes="(max-width: 490px) 80vw, 36vw">
 
-image-3: 
+image-small: 
 <img class='image-small' src="image/chill/prototype-framed-480w.png" 
 	srcset="image/chill/prototype-framed-960w.png 960w, image/chill/prototype-framed-480w.png 480w, image/chill/prototype-framed-392w.png 392w" 
 	sizes="(max-width: 490px) 80vw,(max-width: 810px) 50vw, 25vw">
+
+image-set:
+<img class='image-set' src="image/flamingo/set-2-1440w.png" 
+	srcset="image/flamingo/set-2-2880w.png 2880w, image/flamingo/set-2-1440w.png 1440w, image/flamingo/set-2-600w.png 600w" 
+	sizes="(max-width: 490px) 80vw, 75vw">
+
+image-full:
+<img class='image-full' src="image/kh/persona-960w.png" 
+	srcset="image/kh/persona-1920w.png 1920w, image/kh/persona-960w.png 960w, image/kh/persona-400w.png 400w" 
+	sizes="(max-width: 490px) 80vw, 50vw">

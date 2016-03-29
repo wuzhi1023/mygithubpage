@@ -4,7 +4,7 @@ $(function() {
     $('.project').css('height', height);
 
     $('.project').each(function() {
-        delay = $(this).position().top*0.8 + $(this).position().left;
+        delay = ($(this).position().top*0.8 + $(this).position().left)*1280/$(window).innerWidth();
         $(this).velocity({backgroundColor: ['#82fffc','#f70'], backgroundColorAlpha: [0.2,1]}, {duration: 50, delay: delay});
         $(this).children("img").velocity({opacity: 1}, {delay: delay+80});
         $(this).children(".project-name").velocity({opacity: 1}, {delay: delay+80});
