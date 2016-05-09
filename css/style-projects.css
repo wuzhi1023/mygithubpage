@@ -12,6 +12,7 @@ body {
 	width: 100vw;
 	background-image: url('../image/texture.png');
 	background-color: #F70;
+	background-attachment: fixed;
 	overflow-x: hidden;
 }
 h1 {
@@ -37,11 +38,12 @@ h1 {
     transition: color 0.25s;
 }
 #project-grid {
-	position: fixed;
+	position: absolute;
 	top: 38px;
 	right: 45px;
 	width: 68%;
 	display: block;
+	margin-bottom: 50vh;
 }
 .project {
 	position: relative;
@@ -52,6 +54,7 @@ h1 {
 }
 .hover-block {
 	position: absolute;
+	margin: 0 0 0 0;
 	left: 0;
 	background-color: #d96500;
 	opacity:0;
@@ -62,6 +65,7 @@ h1 {
 }
 .hover-block:hover {
 	position: absolute;
+	margin: 0 0 0 0;
 	left: 0;
 	background-color: #d96500;
 	opacity:.2;
@@ -94,9 +98,9 @@ img {
 	top: 420px;
 }
 #nav-block {
-	position: absolute;
+	position: fixed;
 	left: 7%;
-	bottom: 12%;
+	top: 65%;
 }
 #transition-block {
 	background-color: #622e00;
@@ -157,6 +161,9 @@ img {
 @media screen and (max-width: 1024px) {
 	.project-name {
 		font-size: 1em;
+	}
+	#project-grid {
+		width: 64%;
 	}
 }
 @media screen and (max-width: 760px) {
