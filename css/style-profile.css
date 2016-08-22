@@ -76,7 +76,6 @@ p {
 	font-family: 'Comfortaa', cursive;
 	font-weight: 300;
 	font-size: 1.5em;
-	text-align: justify;
 }
 .before-list {
 	margin-bottom: 0;
@@ -84,7 +83,14 @@ p {
 mark {
 	font-family: 'Comfortaa', cursive;
 	font-weight: 400;
-	background-color: rgba(179,83,0,0.5);
+	background-color: rgba(179,83,0,0.25);
+}
+a mark {
+	text-decoration: underline;
+	transition: all 0.3s;
+}
+a:hover mark {
+	background-color: rgba(179,83,0,0.75);
 }
 ul {
 	display: inline-block;
@@ -93,7 +99,6 @@ ul {
 }
 li {
 	font-family: 'Comfortaa', cursive;
-	text-align: justify;
 	font-weight: 300;
 	font-size: 1.1em;
 }
