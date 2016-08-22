@@ -27,6 +27,12 @@ li {
 	margin-left: auto;
     margin-right: auto;
 }
+#hero-block.lightbg a {
+	color: #1C2321;
+}
+#hero-block.lightbg #title {
+	color: #1C2321;
+}
 /*fix navbar*/
 #fix-navbar {
 	opacity: 0;
