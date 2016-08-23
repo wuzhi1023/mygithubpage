@@ -9,49 +9,7 @@ $(function() {
   var intern = $('#intern').offset().top;
   var contact = $('#contact').offset().top;
   if (window.innerWidth > 850){
-    effect = true;
-    var $obj = $('#float-obj');
-    var totalHeight = $('body').height();
-    var initTop = $obj.position().top;
-    var initLeft = $obj.position().left;
-    var $pageNav = $("#page-nav");
-    var initNavLeft = $pageNav.position().left;
-    var scrollOffset = 0;
-    var leftOffset = 0;
-    var topOffset = 0;
-    var avoidChange = false;
-    $('#page-nav-block').css('left', - initNavLeft - 200);
-    var aboutMeSVG = new Vivus('about-me-svg', {
-      type: 'delayed',
-      duration: 240,
-      animTimingFunction: Vivus.EASE
-    });
-    var skillsSVG = new Vivus('skills-svg', {
-      type: 'delayed',
-      duration: 240,
-      animTimingFunction: Vivus.EASE
-    });
-    var educationSVG = new Vivus('education-svg', {
-      type: 'delayed',
-      duration: 240,
-      animTimingFunction: Vivus.EASE
-    });
-    var internSVG = new Vivus('intern-svg', {
-      type: 'delayed',
-      duration: 240,
-      animTimingFunction: Vivus.EASE
-    });
-    var contactSVG = new Vivus('contact-svg', {
-      type: 'delayed',
-      duration: 240,
-      animTimingFunction: Vivus.EASE
-    });
-    $('svg').hide();
-    scroll(true); //initial scroll
-
-    $(window).scroll(function() {scroll(false)});
-
-    function scroll(init){
+    function scrollView(init){
       var scrollTop = $(window).scrollTop();
       scrollOffset = - (window.innerHeight-400) * scrollTop/totalHeight;
       updateObj(200);
@@ -67,13 +25,6 @@ $(function() {
         toggle();
       }
     }
-
-    $(document).mousemove(function( event ) {
-      leftOffset = -((2*event.pageX/window.innerWidth)-1)*30;
-      topOffset = ((2*event.clientY/window.innerHeight)-1)*13;
-      updateObj(400);
-    })
-
     function updateObj(duration){
       $obj.velocity({top: initTop+scrollOffset+topOffset, left: initLeft+leftOffset}, {duration: duration, easing: [.58,.83,.53,.84], queue:false});
       $pageNav.velocity({left: initNavLeft-0.7*leftOffset}, {duration: duration, easing: [.58,.83,.53,.84], queue:false});
@@ -148,6 +99,56 @@ $(function() {
       var width = initNavLeft + 1*$curSec.width()+ 230 - 0.7*leftOffset;
       $('#page-nav-block').velocity({top: top, width:width}, {duration: 150, easing: [.58,.83,.53,.84], queue:false});
     }
+
+    effect = true;
+    var $obj = $('#float-obj');
+    var totalHeight = $('body').height();
+    var initTop = $obj.position().top;
+    var initLeft = $obj.position().left;
+    var $pageNav = $("#page-nav");
+    var initNavLeft = $pageNav.position().left;
+    var scrollOffset = 0;
+    var leftOffset = 0;
+    var topOffset = 0;
+    var avoidChange = false;
+    $('#page-nav-block').css('left', - initNavLeft - 200);
+    var aboutMeSVG = new Vivus('about-me-svg', {
+      type: 'delayed',
+      duration: 240,
+      animTimingFunction: Vivus.EASE
+    });
+    var skillsSVG = new Vivus('skills-svg', {
+      type: 'delayed',
+      duration: 240,
+      animTimingFunction: Vivus.EASE
+    });
+    var educationSVG = new Vivus('education-svg', {
+      type: 'delayed',
+      duration: 240,
+      animTimingFunction: Vivus.EASE
+    });
+    var internSVG = new Vivus('intern-svg', {
+      type: 'delayed',
+      duration: 240,
+      animTimingFunction: Vivus.EASE
+    });
+    var contactSVG = new Vivus('contact-svg', {
+      type: 'delayed',
+      duration: 240,
+      animTimingFunction: Vivus.EASE
+    });
+    $('svg').hide();
+    scrollView(true); //initial scroll
+
+    $(window).scroll(function() {scrollView(false)});
+
+    $(document).mousemove(function( event ) {
+      leftOffset = -((2*event.pageX/window.innerWidth)-1)*30;
+      topOffset = ((2*event.clientY/window.innerHeight)-1)*13;
+      updateObj(400);
+    })
+
+    
     $( window ).resize(function() {
       about_me = $('#about-me').offset().top;
       skills = $('#skills').offset().top;
@@ -172,7 +173,6 @@ $(function() {
       }
     });
   }
-
 
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
